@@ -1,0 +1,91 @@
+
+
+/*- FILTER OPTIONS -*/
+ul#filterOptions {
+	position: absolute;
+	transform: translate(-50%,0);
+	left: 50%;
+	padding-top: 30px;
+	width: 100%;
+}
+ul#filterOptions li { 
+	height: 52px;
+	display: inline-block; 
+}
+ul#filterOptions li a {
+	height: 50px;
+	padding: 0px 10px;	
+	color: #8c8c8c;	
+	line-height: 50px;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+}
+ul#filterOptions li a:hover {
+	
+}
+ul#filterOptions li.active a { 
+	color: #111;
+}
+/*- -*/
+/*- OUR DATA HOLDER -*/
+ul.ourHolder {
+	width: 100%;	
+	overflow: hidden;
+	list-style:none;
+}
+ul.ourHolder li.item {
+	width: 33%;
+	height: 320px;
+	float: left;
+	text-align: center;	
+	overflow: hidden;
+	padding: 25px 25px;
+	
+}
+ul.ourHolder li.item h3 { margin-top: 10px; font-size: 16px; line-height: 20px; }
+/* for tab view */
+@media only screen and (min-width:480px) and (max-width: 768px)  {
+ul#filterOptions {
+    position: absolute;
+	transform: translate(-50%,0);
+	left: 50%;
+	padding-top: 30px;
+	width: 100%;
+	overflow: visible;
+	margin-left: 15px;
+}
+ul.ourHolder li.item {
+    width: 100%;
+    height: 320px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+}
+/*For Laptop View*/
+@media only screen and (min-width:768px) and (max-width: 1024px)  {
+
+}
+/*- for mobile view -*/
+@media only screen and (min-width:280px) and (max-width: 479px)  {
+ul#filterOptions {
+    position: absolute;
+	transform: translate(-50%,0);
+	left: 50%;
+	padding-top: 30px;
+	width: 100%;
+	overflow: visible;
+}
+ul.ourHolder li.item {
+    width: 100%;
+    height: 320px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+}
